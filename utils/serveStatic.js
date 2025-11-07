@@ -23,11 +23,4 @@ export async function serveStatic(req, res, baseDir) {
       sendResponse(res, content, 500, "text/html");
     }
   }
-  /*
-
-challenge:
-If the error code is "ENDENT", serve the 404.html page.
-if there's another error, serve a 500 with this string:<html><h1>Server Error: ${err.code}</h1></html>
-  
-  */
 }
